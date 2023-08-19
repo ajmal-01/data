@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(1, 1, 19);
+    color: #fff;
+    font-family: cursive;
+    background:url(./img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg) no-repeat center/cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+     background: rgb(39,60,55);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: rgb(171, 156, 207);
+    font-size: 1.05rem;
+}
+
+
+.left{
+    font-size: 1.5rem;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+.first > div{
+    width: 30%;
+
+}
+
+
+.leftSection{
+    
+    font-size: 2rem;
+    
+    
+}
+.rightSection{
+    width: 60%;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6be2dc;
+    
+}
+.rightSection form fieldset{
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+    background-color: #1d311b;
+
+}
+.rightSection form fieldset legend{
+    font-size: 1.25em;
+    padding: 0.25em;
+    color: #413b3b;
+    font-weight: 800;
+}
+form label{
+    display: block;
+    margin-top: 1em;
+
+}
+.checks label{
+    margin-top: 0;
+}
+label:first-of-type{
+    margin-top: 0;
+}
+input{
+    padding: .5em;
+    border: 1px solid #999;
+
+}
+input[type ="email"], input[type ="text"], input[type ="tel"]{
+    width :15em;
+}
+textarea{
+    min-height: 4em;
+    min-width: 100%;
+    padding: .5em;
+    border: 1px solid #999;
+
+}
+.checks{
+    padding: 1em;
+
+}
+.checks p{
+    margin-bottom: 0;
+}
+input[type="checkbox"] + label , input[type="radio"] + label{
+    display: inline-block;
+    padding-top: 0;
+    margin-top:0;
+}
+input[type="radio"]{
+    margin-top: .7em;
+    margin-right: 0;
+}
+input[type="radio"]:first-of-type{
+    margin-left: 0;
+}
+input[type="submit"]{
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: .8em;
+}
+.span1{
+    color: rgb(177, 31, 31);
+    font-weight: 900;
+    
+    /* position: absolute;
+    top: 40%; */
+    font-family: cursive;
+    
+} 
+.span2{
+     color:rgb(183, 211, 58);
+     font-weight: 900;
+    
+}
+#element{
+    color:rgb(183, 211, 58);
+    font-weight: 900;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Griffy&family=Henny+Penny&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Ajmal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftSection"><span class="span1">Hi!</span> MY NAME IS <span class="span2">AJMAL</span>
+                <div>AND I AM A</div>
+                  <!-- Element to contain animated typing -->
+                 <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <form action="https://script.google.com/macros/s/AKfycbzGtnWIrcdhS0Jllndj1H_LeddZyq_6py774ZVYT2OOyqs7ueVHO8DzqOHO9j6okFvS/exec" method="post" onsubmit="return validateAll()">
+                    <fieldset>
+                        <!-- <legend></legend> -->
+                    <label for="fullName">Name :</label>
+                    <input type="text" name="fullName" placeholder="Full Name" id="fullName" onkeyup="nameValidation()"><p id="first1" style="display: inline-block; margin: 0 10px;"></p>
+
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" placeholder="Email" id="email" onkeyup="emailValidation()"><p id="verify2" style="display: inline-block; margin: 0 10px;"></p>
+
+                    <label for="phone">Phone :</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Mobile Number" onkeyup="numberValidation()"><p id="verify3" style="display: inline-block; margin: 0 10px;"></p>
+
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message"></textarea>
+
+                    <div class="checks">
+                        <input type="checkbox" id="copyMail" name="copyMail">
+                        <label for="copyMail">Send a copy to my Email</label>
+                    </div>
+                    <div class="checks">
+                        <p>Preferred method of Contact</p>
+                        <input type="radio" name="contact" id="contactText" value="text">
+                        <label for="contactText">Text Message</label>
+
+                        <input type="radio" name="contact" id="contactPhone" value="phone" >
+                        <label for="contactPhone">Phone Call</label>
+
+                        <input type="radio" name="contact" id="contactEmail" value="email">
+                        <label for="contactEmail">Email</label>
+                    </div>
+
+
+
+                    <input type="submit" id="submit" value="Contact Me">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['SMARTPHONE TECHIE','WEB DEVELOPER...'],
+          typeSpeed: 50,
+        });
+      </script>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
